@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ChatBotApp</string>
     <string name="esqueciSenha"><u>esqueci minha senha</u></string>
+    <string name="Logo_Itaú_Splash">Apresentação do logo do Banco Itaú</string>
 </resources>
