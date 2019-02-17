@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ChatBotApp</string>
+    <string name="esqueciSenha"><u>esqueci minha senha</u></string>
 </resources>

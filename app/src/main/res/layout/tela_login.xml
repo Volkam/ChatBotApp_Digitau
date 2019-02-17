@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/backgroundCinzaClaro">
+
+    <Button
+        android:id="@+id/login_btn_abrirConta"
+        style="@style/BotaoArredondado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="abrir uma Conta   "
+        app:layout_constraintStart_toStartOf="@+id/login_tv_abraConta"
+        app:layout_constraintTop_toBottomOf="@+id/login_tv_abraConta" />
+
+    <TextView
+        android:id="@+id/login_tv_bemVindo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Seja bem-vindo!"
+        android:textColor="@color/textoCinzaBold"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/login_iv_logo"
+        app:layout_constraintTop_toBottomOf="@+id/login_iv_logo" />
+
+    <TextView
+        android:id="@+id/login_tv_abraConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abra sua conta, é rápido,\nfácil e divertido!"
+        android:textColor="@color/textoCinzaNormal"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/login_tv_bemVindo"
+        app:layout_constraintTop_toBottomOf="@+id/login_tv_bemVindo" />
+
+    <ImageView
+        android:id="@+id/login_iv_logo"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoitau" />
+
+    <TextView
+        android:id="@+id/login_tv_ou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="ou"
+        android:textColor="@color/textoCinzaNormal"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_btn_abrirConta" />
+
+    <ImageView
+        android:id="@+id/login_iv_linhaDireita"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/login_tv_ou"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/login_tv_ou"
+        app:layout_constraintTop_toTopOf="@+id/login_tv_ou"
+        app:srcCompat="@drawable/linha_cinza" />
+
+    <ImageView
+        android:id="@+id/login_iv_linhaEsquerda"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/login_tv_ou"
+        app:layout_constraintEnd_toStartOf="@+id/login_tv_ou"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/login_tv_ou"
+        app:srcCompat="@drawable/linha_cinza" />
+
+    <TextView
+        android:id="@+id/login_tv_acesseAgora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Já tem uma conta? Acesse agora…"
+        android:textColor="@color/textoCinzaNormal"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/login_btn_abrirConta"
+        app:layout_constraintTop_toBottomOf="@+id/login_tv_ou" />
+
+    <EditText
+        android:id="@+id/login_et_cpf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/ic_usuario_laranja"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="digite seu cpf"
+        android:inputType="number"
+        android:padding="20dp"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/login_tv_acesseAgora"
+        app:layout_constraintTop_toBottomOf="@+id/login_tv_acesseAgora" />
+
+    <EditText
+        android:id="@+id/login_et_senha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/ic_cadeado_laranja"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="sua senha"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="@+id/login_et_cpf"
+        app:layout_constraintStart_toStartOf="@+id/login_tv_acesseAgora"
+        app:layout_constraintTop_toBottomOf="@+id/login_et_cpf" />
+
+    <Button
+        android:id="@+id/login_btn_entrar"
+        style="@style/BotaoArredondado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="entrar"
+        app:layout_constraintEnd_toEndOf="@+id/login_et_senha"
+        app:layout_constraintTop_toBottomOf="@+id/login_et_senha" />
+
+    <TextView
+        android:id="@+id/login_tv_esqueciSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/esqueciSenha"
+        android:textColor="@color/textoCinzaNormal"
+        app:layout_constraintBottom_toBottomOf="@+id/login_btn_entrar"
+        app:layout_constraintEnd_toStartOf="@+id/login_btn_entrar"
+        app:layout_constraintStart_toStartOf="@+id/login_et_senha"
+        app:layout_constraintTop_toTopOf="@+id/login_btn_entrar" />
+
+</android.support.constraint.ConstraintLayout>
