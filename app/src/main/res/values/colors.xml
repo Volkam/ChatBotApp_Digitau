@@ -5,7 +5,8 @@
     <color name="colorAccent">#D81B60</color>
     <color name="LaranjaItau">#EC7001</color>
     <color name="SombraLaranja">#BF5A00</color>
-    <color name="textoCinzaNormal">#FF909090</color>
+    <color name="textoCinzaNormal">#909090</color>
     <color name="textoCinzaBold">#FF909090</color>
     <color name="backgroundCinzaClaro">#F3F3F3</color>
+    <color name="cinzaEscuro">#4A4A4A</color>
 </resources>

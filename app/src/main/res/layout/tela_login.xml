@@ -105,7 +105,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
-        android:background="@drawable/edittext_background"
+        android:background="@drawable/bg_edittext_login"
         android:drawableLeft="@drawable/ic_usuario_laranja"
         android:drawablePadding="16dp"
         android:ems="10"
@@ -122,7 +122,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="@drawable/edittext_background"
+        android:background="@drawable/bg_edittext_login"
         android:drawableLeft="@drawable/ic_cadeado_laranja"
         android:drawablePadding="16dp"
         android:ems="10"
@@ -141,9 +141,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
         android:text="entrar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/login_et_senha"
-        app:layout_constraintTop_toBottomOf="@+id/login_et_senha" />
+        app:layout_constraintTop_toBottomOf="@+id/login_et_senha"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/login_tv_esqueciSenha"
